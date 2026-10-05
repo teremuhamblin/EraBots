@@ -1,123 +1,43 @@
-# 📄⚡ EraBots
+###### ~/README.md >> markdown 
+# ⚡ EraBots
+- v2.0
+   - **Quantum‑Era Multi‑Bot Framework**
 
-[![Dependency Graph](https://github.com/teremuhamblin/EraBots/actions/workflows/dependabot/update-graph/badge.svg)](https://github.com/teremuhamblin/EraBots/actions/workflows/dependabot/update-graph)
-
-- Multi‑Bot Quantum‑Era Framework
-
->EraBots est un framework léger permettant de créer, assembler et exécuter plusieurs bots simultanément.  
-- Il s’agit d’un projet modulaire, extensible, et conçu pour l’ère moderne des systèmes distribués.
-
-### 🚀 Fonctionnalités principales
+>EraBots v2.0 introduit :
 
 ```text
-- Architecture multi‑bots  
-- Moteur central EraEngine  
-- Modules bots indépendants  
-- Extensible (IA, NLP, Web3, automatisation)  
-- Structure professionnelle pour GitHub
-```
-
-### 📁 Structure du projet
-
-[![pages-build-deployment](https://github.com/teremuhamblin/EraBots/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/teremuhamblin/EraBots/actions/workflows/pages/pages-build-deployment)
-
-```text
-EraBots/
-│
-├── core/
-│   ├── engine.py               # Moteur multi-bots
-│   ├── agents_engine.py        # Nouveau moteur OpenAI Agents
-│   └── utils.py
-│
-├── modules/
-│   ├── echo_bot.py
-│   ├── sample_bot.py
-│   ├── openai_agent.py         # Agent text complet
-│   ├── voice_agent.py          # Agent voix
-│   └── sandbox_agent.py        # Agent sandbox
-│
-├── assets/
-│
-├── main.py
-├── requirements.txt
-└── README.md
-```
-
-### 🛠️ Installation
-
-```bash
-pip install -r requirements.txt
-```
-
-### ▶️ Exécution
-
-```bash
-python main.py
-```
-
-### ⚡ EraBots Agents Integration
-
-- EraBots intègre désormais le SDK **OpenAI Agents**, permettant :
-
-```text
-- Agents textuels
-- Agents sandbox
-- Agents voix
-- Agents realtime
-- Handoffs entre bots
-- Guardrails
+- EventBus interne
 - Sessions persistantes
-- Tracing complet
+- Handoff intelligent
+- Exécution parallèle
+- Architecture Realtime‑Ready
+- Compatibilité OpenAI Agents
 ```
 
-### Modules disponibles
+## 🚀 Nouveautés v2.0
+- Nouveau moteur EraEngine v2.0
+- EventBus (réseau interne d’événements)
+- SessionManager (mémoire courte)
+- Dispatch intelligent
+- Logs Quantum‑Era
+- Architecture modulaire
+
+## 📁 Structure
 
 ```text
-- `openai_agent.py` → Agent textuel OpenAI
-- `voice_agent.py` → Agent voix
-- `sandbox_agent.py` → Agent workspace
-- `agents_engine.py` → Moteur OpenAI Agents
+core/
+ ├── engine.py
+ ├── eventbus.py
+ └── session.py
+
+modules/
+ ├── echo_bot.py
+ ├── sample_bot.py
+ ├── openai_agent.py
+ ├── voice_agent.py
+ └── sandbox_agent.py
 ```
 
-### Exécution
-
-```bash
-python main.py
-```
-
-### 🧩 Ajouter un nouveau bot
-
-- Créer un fichier dans modules/ :
-
-```python
-class MyBot:
-    name = "MyBot"
-
-    async def handle(self, message):
-        if message == "hello":
-            return "Bonjour !"
-        return None
-```
-
-- Puis l’enregistrer dans main.py :
-
-```python
-engine.register(MyBot())
-```
-
-### 🎯 Objectif
-
-- EraBots est conçu pour :
-
-```text
-- apprendre la structure d’un framework Python  
-- créer plusieurs bots modulaires  
-- développer des systèmes automatisés  
-- servir de base à des projets IA / Web3 / Automation
-```
-
-### 📜 Licence
-- Projet personnel
-- Intégré à l’écosystème PYTHON
-
----
+main.py
+requirements.txt
+README.md
