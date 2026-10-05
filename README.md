@@ -20,19 +20,23 @@
 ```text
 EraBots/
 │
-├── core/ # Moteur interne EraBots
-│   ├── engine.py # Gestion des bots, événements, pipeline
-│   └── utils.py # Fonctions utilitaires
+├── core/
+│   ├── engine.py               # Moteur multi-bots
+│   ├── agents_engine.py        # Nouveau moteur OpenAI Agents
+│   └── utils.py
 │
-├── modules/ # Bots individuels
-│   ├── echo_bot.py # Bot de démonstration
-│   └── sample_bot.py # Exemple de bot
+├── modules/
+│   ├── echo_bot.py
+│   ├── sample_bot.py
+│   ├── openai_agent.py         # Agent text complet
+│   ├── voice_agent.py          # Agent voix
+│   └── sandbox_agent.py        # Agent sandbox
 │
-├── assets/ # Logos, images, icônes
+├── assets/
 │
-├── main.py # Point d'entrée principal
-├── requirements.txt # Dépendances
-└── README.md # Documentation du projet
+├── main.py
+├── requirements.txt
+└── README.md
 ```
 
 ### 🛠️ Installation
