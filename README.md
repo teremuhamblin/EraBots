@@ -1,5 +1,7 @@
 # 📄⚡ EraBots
 
+[![Dependency Graph](https://github.com/teremuhamblin/EraBots/actions/workflows/dependabot/update-graph/badge.svg)](https://github.com/teremuhamblin/EraBots/actions/workflows/dependabot/update-graph)
+
 - Multi‑Bot Quantum‑Era Framework
 
 >EraBots est un framework léger permettant de créer, assembler et exécuter plusieurs bots simultanément.  
