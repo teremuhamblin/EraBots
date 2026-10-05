@@ -1,0 +1,40 @@
+name: "🛠️ Task / Maintenance — EraBots v2.0"
+description: "Tâche technique, refactor, optimisation ou maintenance du framework EraBots v2.0"
+title: "[TASK v2.0] — "
+labels: ["task", "maintenance", "erabots", "v2.0"]
+
+body:
+  - type: textarea
+    id: objectif
+    attributes:
+      label: 🎯 Objectif de la tâche
+      placeholder: "Exemple : refactor du SessionManager v2.0..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: 📘 Détails techniques
+      placeholder: "Fichiers concernés, logique à modifier, impact..."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: modules
+    attributes:
+      label: 🤖 Modules concernés
+      options:
+        - label: "Engine v2.0"
+        - label: "EventBus v2.0"
+        - label: "SessionManager v2.0"
+        - label: "AgentsEngineV2"
+        - label: "Bots v2.0"
+        - label: "Security / BlueSecurity"
+        - label: "Config.yaml"
+
+  - type: textarea
+    id: tests
+    attributes:
+      label: 🧪 Tests nécessaires
+      placeholder: "Unitaires, intégration, multi-bots..."
