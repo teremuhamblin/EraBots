@@ -1,0 +1,50 @@
+name: "🐞 PR — Bugfix (EraBots v2.0)"
+description: "Pull Request pour corriger un bug dans EraBots v2.0"
+title: "[BUGFIX v2.0] — "
+labels: ["bugfix", "pull-request", "erabots", "v2.0"]
+
+body:
+  - type: textarea
+    id: bug_description
+    attributes:
+      label: 🔧 Description du bug
+      placeholder: "Bug observé..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 🔁 Reproduction
+      placeholder: "Étapes pour reproduire..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: fix
+    attributes:
+      label: 🛠️ Correctif apporté
+      placeholder: "Explication du patch..."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: modules
+    attributes:
+      label: 🤖 Modules impactés
+      options:
+        - label: "Engine v2.0"
+        - label: "EventBus v2.0"
+        - label: "SessionManager v2.0"
+        - label: "AgentsEngineV2"
+        - label: "Bots v2.0"
+        - label: "Security / BlueSecurity"
+        - label: "Config.yaml"
+
+  - type: textarea
+    id: tests
+    attributes:
+      label: 🧪 Tests effectués
+      placeholder: "Unitaires, intégration..."
+    validations:
+      required: true
