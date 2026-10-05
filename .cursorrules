@@ -1,0 +1,41 @@
+# ============================
+# EraBots v2.0 — .cursorrules
+# Doctrine Quantum‑Era / Militaire‑Tech
+# ============================
+
+# --- Zones interdites ---
+deny editing "core/engine.py"
+deny editing "core/eventbus.py"
+deny editing "core/session.py"
+deny editing "requirements.txt"
+deny deleting "modules/"
+deny deleting "agents/"
+deny deleting "core/"
+
+# --- Zones autorisées ---
+allow editing "modules/"
+allow editing "agents/"
+allow editing "README.md"
+allow editing "config.yaml"
+allow editing "assets/"
+
+# --- Style de code obligatoire ---
+enforce pep8
+enforce max_function_length 40
+enforce no_magic
+enforce explicit_exceptions
+enforce doctrinal_comments
+
+# --- Règles de sécurité ---
+deny system_commands
+deny network_calls unless inside OpenAI Agents tools
+deny file_write_outside_project
+
+# --- Règles de communication ---
+require explanation_before_change
+require justification_for_refactor
+require alternative_solutions
+require no_silent_changes
+
+# --- Clause finale ---
+deny editing "core/" unless explicit human order from Major Hamblin (Teremu)
