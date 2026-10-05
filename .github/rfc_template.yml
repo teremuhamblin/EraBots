@@ -1,0 +1,49 @@
+name: "📜 RFC — EraBots v2.0"
+description: "Proposition technique majeure (Request For Comments) pour EraBots v2.0"
+title: "[RFC v2.0] — "
+labels: ["rfc", "architecture", "erabots", "v2.0"]
+
+body:
+  - type: textarea
+    id: resume
+    attributes:
+      label: 🧠 Résumé de la RFC
+      placeholder: "Résumé clair de la proposition..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: 🎯 Motivation
+      placeholder: "Problème actuel, limitations, justification..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposition
+    attributes:
+      label: 🚀 Proposition technique
+      placeholder: "Architecture, modules, API, protocoles..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: 📡 Impact sur EraBots
+      placeholder: "Performance, sécurité, compatibilité..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 🔄 Alternatives considérées
+      placeholder: "Autres solutions envisagées..."
+
+  - type: textarea
+    id: implementation
+    attributes:
+      label: 🛠️ Plan d’implémentation
+      placeholder: "Étapes, modules, fichiers..."
