@@ -1,0 +1,68 @@
+name: "🐞 Bug Report — EraBots v2.0"
+description: "Signaler un dysfonctionnement dans le framework EraBots v2.0"
+title: "[BUG v2.0] — "
+labels: ["bug", "erabots", "v2.0"]
+
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: 🔧 Description du bug
+      description: "Décris clairement le bug et son impact."
+      placeholder: "Description du problème..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 🔁 Étapes pour reproduire
+      description: "Liste les étapes exactes pour reproduire le bug."
+      placeholder: "1. ...\n2. ...\n3. ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 📌 Comportement attendu
+      placeholder: "Ce qui aurait dû se produire..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: 🖥️ Environnement
+      description: "Version, OS, module impacté, configuration..."
+      placeholder: "Engine v2.0 / EventBus v2.0 / AgentsEngineV2..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: 📎 Logs / Screenshots
+      description: "Ajoute tout élément utile."
+      placeholder: "Logs, stacktrace, captures..."
+  
+  - type: checkboxes
+    id: modules
+    attributes:
+      label: 🤖 Modules concernés
+      options:
+        - label: "Engine v2.0"
+        - label: "EventBus v2.0"
+        - label: "SessionManager v2.0"
+        - label: "AgentsEngineV2"
+        - label: "Bots v2.0"
+        - label: "Security / BlueSecurity"
+        - label: "Config.yaml"
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: 📡 Impact du bug
+      placeholder: "Critique / Important / Modéré / Faible..."
+    validations:
+      required: true
