@@ -1,8 +1,5 @@
-from core.utils import log
-
 class EchoBot:
     name = "EchoBot"
 
-    async def handle(self, message):
-        log(f"{self.name} a reçu : {message}")
+    async def handle(self, message, context=None):
         return f"Echo: {message}"
