@@ -1,0 +1,27 @@
+name: "💬 Discussion — EraBots v2.0"
+description: "Discussion ouverte autour du framework EraBots v2.0"
+title: "[DISCUSSION v2.0] — "
+labels: ["discussion", "erabots", "v2.0"]
+
+body:
+  - type: textarea
+    id: sujet
+    attributes:
+      label: 🗣️ Sujet
+      placeholder: "Thème de la discussion..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: contexte
+    attributes:
+      label: 📘 Contexte
+      placeholder: "Pourquoi ce sujet est important..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: propositions
+    attributes:
+      label: 💡 Idées / pistes
+      placeholder: "Propositions, réflexions, alternatives..."
