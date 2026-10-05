@@ -1,0 +1,50 @@
+name: "🚀 Feature Request — EraBots v2.0"
+description: "Proposer une nouvelle fonctionnalité ou amélioration pour EraBots v2.0"
+title: "[FEATURE v2.0] — "
+labels: ["feature", "erabots", "v2.0"]
+
+body:
+  - type: textarea
+    id: objectif
+    attributes:
+      label: 🎯 Objectif
+      description: "Décris la fonctionnalité souhaitée."
+      placeholder: "Exemple : Ajouter un module de routing avancé dans EventBus..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: contexte
+    attributes:
+      label: 📘 Contexte
+      description: "Pourquoi cette fonctionnalité est-elle utile ?"
+      placeholder: "Problème actuel, limitations, besoin utilisateur..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation
+    attributes:
+      label: 🛠️ Implémentation potentielle
+      placeholder: "Modules concernés, fichiers à modifier, logique technique..."
+  
+  - type: checkboxes
+    id: modules
+    attributes:
+      label: 🤖 Modules concernés
+      options:
+        - label: "Engine v2.0"
+        - label: "EventBus v2.0"
+        - label: "SessionManager v2.0"
+        - label: "AgentsEngineV2"
+        - label: "Bots v2.0"
+        - label: "Security / BlueSecurity"
+        - label: "Config.yaml"
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: 📈 Impact attendu
+      placeholder: "Performance, UX, sécurité, architecture..."
+    validations:
+      required: true
