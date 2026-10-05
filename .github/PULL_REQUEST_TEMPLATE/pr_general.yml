@@ -1,0 +1,58 @@
+name: "🟩 PR — Général (EraBots v2.0)"
+description: "Pull Request générale pour le framework EraBots v2.0"
+title: "[PR v2.0] — "
+labels: ["pull-request", "erabots", "v2.0"]
+
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: ✨ Résumé
+      placeholder: "Résumé clair de la PR..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: 📘 Contexte
+      placeholder: "Problème ou besoin initial..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: 🚀 Solution proposée
+      placeholder: "Détails techniques..."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: modules
+    attributes:
+      label: 🔧 Modules concernés
+      options:
+        - label: "Engine v2.0"
+        - label: "EventBus v2.0"
+        - label: "SessionManager v2.0"
+        - label: "AgentsEngineV2"
+        - label: "Bots v2.0"
+        - label: "Security / BlueSecurity"
+        - label: "Config.yaml"
+
+  - type: textarea
+    id: tests
+    attributes:
+      label: 🧪 Tests
+      placeholder: "Unitaires, intégration, multi-bots..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: 📡 Impact
+      placeholder: "Performance, sécurité, compatibilité..."
+    validations:
+      required: true
