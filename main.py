@@ -2,16 +2,20 @@ import asyncio
 from core.engine import EraEngine
 from modules.echo_bot import EchoBot
 from modules.sample_bot import SampleBot
+from modules.openai_agent import OpenAIAgent
+from modules.voice_agent import VoiceAgent
+from modules.sandbox_agent import SandboxBot
 
 async def main():
     engine = EraEngine()
 
-    # Enregistrement des bots
     engine.register(EchoBot())
     engine.register(SampleBot())
+    engine.register(OpenAIAgent())
+    engine.register(VoiceAgent())
+    engine.register(SandboxBot())
 
-    # Simulation d'un message entrant
-    incoming_message = "ping"
+    incoming_message = "Explain recursion in one sentence."
     print(f"Message reçu : {incoming_message}")
 
     responses = []
