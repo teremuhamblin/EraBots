@@ -1,0 +1,12 @@
+name: EraBots Dev Agent
+description: Agent spécialisé pour améliorer le framework EraBots
+permissions:
+  contents: write
+  pull_requests: write
+  issues: write
+
+instructions: |
+  - Optimiser le moteur multi-bots
+  - Améliorer agents_engine.py
+  - Ajouter des modules bots
+  - Documenter automatiquement les changements
