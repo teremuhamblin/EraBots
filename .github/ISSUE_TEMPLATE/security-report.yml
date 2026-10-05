@@ -1,0 +1,54 @@
+name: "🛡️ Security Report — EraBots v2.0"
+description: "Signaler une faille de sécurité ou un comportement anormal lié à BlueSecurity v1.0"
+title: "[SECURITY v2.0] — "
+labels: ["security", "erabots", "v2.0"]
+
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: 🔐 Description de la faille
+      description: "Explique la vulnérabilité ou le comportement suspect."
+      placeholder: "Description détaillée..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: 📡 Impact potentiel
+      placeholder: "Accès non autorisé, fuite de données, escalade de privilèges..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 🔁 Étapes pour reproduire
+      placeholder: "1. ...\n2. ...\n3. ..."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: modules
+    attributes:
+      label: 🧩 Modules concernés
+      options:
+        - label: "Security / BlueSecurity v1.0"
+        - label: "Engine v2.0"
+        - label: "EventBus v2.0"
+        - label: "SessionManager v2.0"
+        - label: "AgentsEngineV2"
+        - label: "Bots v2.0"
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: 📎 Logs / preuves
+      placeholder: "Stacktrace, captures, outputs suspects..."
+
+  - type: textarea
+    id: mitigation
+    attributes:
+      label: 🛠️ Mitigation proposée
+      placeholder: "Idées de patch, durcissement, règles BlueSecurity..."
