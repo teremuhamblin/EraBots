@@ -1,2 +1,93 @@
+# ============================================================
+# EraBots Quantum‑Era Enterprise Requirements
+# Fusion complète des versions : PRO + DEV/PROD + Quantum‑Era +
+# EraBots v2.0 + PYTHON-Learning Global
+# ============================================================
+
+# ===========================
+# Core Python / Async Engine
+# ===========================
+asyncio
+aiohttp
+python-dotenv
+loguru
+rich
+
+# ===========================
+# EraBots Framework
+# ===========================
 python-wechaty
 requests
+httpx
+
+# ===========================
+# Multi‑Bots / Multi‑Platforms
+# ===========================
+python-telegram-bot
+discord.py
+slack_sdk
+pywhatsapp
+matrix-nio
+pyrogram
+
+# ===========================
+# Web / API / Microservices
+# ===========================
+fastapi
+uvicorn
+starlette
+pydantic
+
+# ===========================
+# IA / NLP / Machine Learning
+# ===========================
+torch
+transformers
+sentencepiece
+numpy
+scikit-learn
+nltk
+spacy
+
+# ===========================
+# Automation / RPA / Tools
+# ===========================
+selenium
+playwright
+pyautogui
+
+# ===========================
+# Database / Storage
+# ===========================
+sqlite3-binary
+tinydb
+sqlalchemy
+redis
+
+# ===========================
+# Security / Crypto / Web3
+# ===========================
+cryptography
+pyjwt
+web3
+
+# ===========================
+# GUI / Desktop (FactForm)
+# ===========================
+tk
+customtkinter
+
+# ===========================
+# Dev Tools / Prod Tools
+# ===========================
+black
+flake8
+pytest
+mypy
+
+# ===========================
+# Quantum‑Era Extensions
+# ===========================
+orjson
+uvloop
+watchfiles
