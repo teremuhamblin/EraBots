@@ -19,6 +19,8 @@
 
 ### 📁 Structure du projet
 
+[![pages-build-deployment](https://github.com/teremuhamblin/EraBots/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/teremuhamblin/EraBots/actions/workflows/pages/pages-build-deployment)
+
 ```text
 EraBots/
 │
@@ -55,7 +57,7 @@ python main.py
 
 ### ⚡ EraBots Agents Integration
 
-- EraBots v1.5 intègre désormais le SDK **OpenAI Agents**, permettant :
+- EraBots intègre désormais le SDK **OpenAI Agents**, permettant :
 
 ```text
 - Agents textuels
