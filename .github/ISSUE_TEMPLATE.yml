@@ -1,0 +1,165 @@
+name: "🟦 EraBots v2.0 — Issue"
+description: "Template officiel pour les issues du framework EraBots v2.0 (Quantum‑Era)"
+title: "[EraBots v2.0] — "
+labels: ["erabots", "v2.0", "issue"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # 🟦 Issue — EraBots v2.0
+        Merci d'utiliser le template officiel EraBots v2.0.
+        Remplissez les sections ci-dessous pour assurer un traitement optimal.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 📘 Description
+      description: >
+        Résume clairement le problème, la demande ou l’amélioration souhaitée.
+        Indique le module concerné : Engine v2.0, EventBus, SessionManager, AgentsEngineV2, Bots v2.0, Security, etc.
+        Explique l’impact sur le fonctionnement du framework.
+      placeholder: "Description détaillée..."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: issue_type
+    attributes:
+      label: 🛠️ Type d’issue
+      options:
+        - label: "Feature — Nouveau module / nouvelle capacité EraBots"
+          checked: true
+        - label: "Bug — Dysfonctionnement dans un composant existant"
+          checked: true
+        - label: "Documentation — Mise à jour ou ajout dans les fichiers docs"
+          checked: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: 📋 Checklist de conformité EraBots v2.0
+      options:
+        - label: "J’ai lu les protocoles du projet (.CLAUDE.md, copilot-instructions.md, AGENTS.md, README v2.0)"
+          checked: true
+        - label: "J’ai vérifié les modules existants pour éviter les doublons"
+          checked: true
+        - label: "J’ai consulté les issues précédentes"
+          checked: true
+        - label: "Cette issue apporte une valeur réelle au framework EraBots v2.0"
+          checked: true
+
+  - type: markdown
+    attributes:
+      value: |
+        # 🤖 Modules EraBots v2.0 concernés
+
+  - type: checkboxes
+    id: core_modules
+    attributes:
+      label: 🔧 Core v2.0
+      options:
+        - label: "Engine v2.0"
+          checked: true
+        - label: "EventBus v2.0"
+          checked: true
+        - label: "SessionManager v2.0"
+          checked: true
+        - label: "Config.yaml"
+          checked: true
+        - label: "Security / BlueSecurity v1.0"
+          checked: true
+
+  - type: checkboxes
+    id: bots_standard
+    attributes:
+      label: 🤖 Bots v2.0 — Standards
+      options:
+        - label: "echo_bot.py"
+          checked: true
+        - label: "sample_bot.py"
+          checked: true
+
+  - type: checkboxes
+    id: bots_agents
+    attributes:
+      label: 🤖 Bots IA — AgentsEngineV2
+      options:
+        - label: "openai_agent.py (Text Agent)"
+          checked: true
+        - label: "voice_agent.py (Voice Agent)"
+          checked: true
+        - label: "sandbox_agent.py (Sandbox Agent)"
+          checked: true
+
+  - type: checkboxes
+    id: bots_advanced
+    attributes:
+      label: 🤖 Bots avancés — Quantum‑Era
+      options:
+        - label: "analysis_bot.py"
+          checked: true
+        - label: "ops_bot.py"
+          checked: true
+        - label: "security_bot.py (BlueSecurity B1 → B9)"
+          checked: true
+        - label: "realtime_agent.py (Streaming)"
+          checked: true
+
+  - type: checkboxes
+    id: bug_section
+    attributes:
+      label: 🐞 Informations supplémentaires en cas de Bug
+      options:
+        - label: "J’ai ajouté des captures d’écran ou logs"
+          checked: true
+        - label: "J’ai détaillé les étapes pour reproduire le problème"
+          checked: true
+        - label: "J’ai proposé une piste de correction"
+          checked: true
+
+  - type: checkboxes
+    id: technical_impact
+    attributes:
+      label: 🟪 Section technique EraBots v2.0
+      options:
+        - label: "Architecture interne"
+          checked: true
+        - label: "Dispatch intelligent"
+          checked: true
+        - label: "Handoff multi-bots"
+          checked: true
+        - label: "Sessions persistantes"
+          checked: true
+        - label: "EventBus (routing, topics, broadcast)"
+          checked: true
+        - label: "AgentsEngineV2 (OpenAI Agents SDK)"
+          checked: true
+        - label: "Sécurité (BlueSecurity)"
+          checked: true
+        - label: "Performance / optimisation"
+          checked: true
+
+  - type: checkboxes
+    id: urgency
+    attributes:
+      label: 📡 Niveau d’urgence
+      options:
+        - label: "Critique — bloque le fonctionnement du framework"
+          checked: true
+        - label: "Important — impact notable"
+          checked: true
+        - label: "Normal — amélioration ou optimisation"
+          checked: true
+        - label: "Faible — cosmétique / documentation"
+          checked: true
+
+  - type: textarea
+    id: final_summary
+    attributes:
+      label: 🟦 Résumé final (Quantum‑Era)
+      description: "Synthèse finale de l’issue."
+      placeholder: "Résumé opérationnel..."
+    validations:
+      required: true
