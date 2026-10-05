@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+
+pull_request_templates:
+  - name: "🟩 PR — Général"
+    file: "pr_general.yml"
+
+  - name: "🐞 PR — Bugfix"
+    file: "pr_bugfix.yml"
+
+  - name: "🚀 PR — Feature"
+    file: "pr_feature.yml"
+
+  - name: "🛡️ PR — Security Patch"
+    file: "pr_security.yml"
