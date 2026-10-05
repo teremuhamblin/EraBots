@@ -1,0 +1,50 @@
+name: "🚀 PR — Feature (EraBots v2.0)"
+description: "Pull Request pour ajouter une nouvelle fonctionnalité à EraBots v2.0"
+title: "[FEATURE v2.0] — "
+labels: ["feature", "pull-request", "erabots", "v2.0"]
+
+body:
+  - type: textarea
+    id: objectif
+    attributes:
+      label: 🎯 Objectif
+      placeholder: "Fonctionnalité souhaitée..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: 📘 Motivation
+      placeholder: "Pourquoi cette feature..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation
+    attributes:
+      label: 🛠️ Implémentation
+      placeholder: "Modules, fichiers, logique..."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: modules
+    attributes:
+      label: 🤖 Modules concernés
+      options:
+        - label: "Engine v2.0"
+        - label: "EventBus v2.0"
+        - label: "SessionManager v2.0"
+        - label: "AgentsEngineV2"
+        - label: "Bots v2.0"
+        - label: "Security / BlueSecurity"
+        - label: "Config.yaml"
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: 📈 Impact attendu
+      placeholder: "Performance, sécurité, architecture..."
+    validations:
+      required: true
