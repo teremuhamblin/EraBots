@@ -1,0 +1,50 @@
+name: "🛡️ PR — Security Patch (BlueSecurity v1.0)"
+description: "Pull Request pour corriger une faille ou renforcer la sécurité EraBots v2.0"
+title: "[SECURITY PATCH v2.0] — "
+labels: ["security", "pull-request", "erabots", "v2.0"]
+
+body:
+  - type: textarea
+    id: vulnerability
+    attributes:
+      label: 🔐 Vulnérabilité corrigée
+      placeholder: "Description de la faille..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: fix
+    attributes:
+      label: 🛠️ Correctif / Durcissement
+      placeholder: "Patch, règles BlueSecurity, modifications..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: risk
+    attributes:
+      label: ⚠️ Risque initial
+      placeholder: "Impact potentiel..."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: modules
+    attributes:
+      label: 🧩 Modules sécuritaires concernés
+      options:
+        - label: "Security / BlueSecurity v1.0"
+        - label: "Engine v2.0"
+        - label: "EventBus v2.0"
+        - label: "SessionManager v2.0"
+        - label: "AgentsEngineV2"
+        - label: "Bots IA"
+        - label: "Config.yaml"
+
+  - type: textarea
+    id: tests
+    attributes:
+      label: 🧪 Tests de sécurité
+      placeholder: "Résilience, isolation, multi-bots..."
+    validations:
+      required: true
