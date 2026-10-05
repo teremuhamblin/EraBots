@@ -1,0 +1,19 @@
+blank_issues_enabled: false
+
+contact_links:
+  - name: "📘 Documentation EraBots v2.0"
+    url: "https://github.com/teremu/EraBots"
+    about: "Consulte la documentation officielle avant de créer une issue."
+
+issue_templates:
+  - name: "🟦 Issue générale EraBots v2.0"
+    description: "Template principal pour les issues du framework EraBots v2.0"
+    file: "erabots_issue_v2.yml"
+
+  - name: "🐞 Bug Report — EraBots v2.0"
+    description: "Signaler un bug dans le framework EraBots v2.0"
+    file: "bug_report.yml"
+
+  - name: "🚀 Feature Request — EraBots v2.0"
+    description: "Proposer une nouvelle fonctionnalité pour EraBots v2.0"
+    file: "feature_request.yml"
