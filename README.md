@@ -51,6 +51,36 @@ pip install -r requirements.txt
 python main.py
 ```
 
+### ⚡ EraBots Agents Integration
+
+- EraBots v1.5 intègre désormais le SDK **OpenAI Agents**, permettant :
+
+```text
+- Agents textuels
+- Agents sandbox
+- Agents voix
+- Agents realtime
+- Handoffs entre bots
+- Guardrails
+- Sessions persistantes
+- Tracing complet
+```
+
+### Modules disponibles
+
+```text
+- `openai_agent.py` → Agent textuel OpenAI
+- `voice_agent.py` → Agent voix
+- `sandbox_agent.py` → Agent workspace
+- `agents_engine.py` → Moteur OpenAI Agents
+```
+
+### Exécution
+
+```bash
+python main.py
+```
+
 ### 🧩 Ajouter un nouveau bot
 
 - Créer un fichier dans modules/ :
